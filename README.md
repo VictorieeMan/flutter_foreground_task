@@ -145,6 +145,12 @@ This plugin has two ways to start a foreground task. There is a way to manually 
 
 #### :hatched_chick: Start manually
 
+0. Setup the following flutter imports:
+```
+import 'dart:isolate';
+import 'package:flutter_foreground_task/flutter_foreground_task.dart';
+```
+
 1. Initialize the `FlutterForegroundTask`. You can use the `FlutterForegroundTask.init()` function to set notifications and task options.
 * `androidNotificationOptions`: Options for setting up notifications on the Android platform.
 * `iosNotificationOptions`: Options for setting up notifications on the iOS platform.
